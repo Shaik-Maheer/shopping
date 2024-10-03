@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+}
+body{
+  overflow: hidden;
+}
+header img {
+  height: 170px;
+  width: 180px;
+}
+
+.header {
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul {
+  display: flex;
+  gap:50px
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s ease;
+  color: black;
+}
+ul li a:hover {
+  color: black; 
+  border-bottom: 3px solid #ff6347;
+}
+.starting-heading {
+  display: flex;
+  justify-content: space-around;
+  gap:50px
+}
+p{
+    font-size: 25px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    font-size:40px;
+    font-style: italic;
+    margin-bottom: 70px;
+    color: #ff6347;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 7px 24px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+button:hover {
+  background-color: #ff6347; 
+  transform: scale(1.2)
+}
+.matter{
+    margin-top: 100px;
+}
+@media (max-width: 1024px) {
+  .imagecontainer{
+    display: none;
+  }
+ .matter{
+  margin-left: 10%;
+ }
+}
+
+.img2{
+  height: 500px;
+  width: 400px;
+  border-radius: 50px;
+  z-index: 3;
+  transition: transform 0.3s ease;
+  margin-top: 40px;
+}
+
+.img2:hover {
+  transform: rotate(3deg); /* Rotate on hover */
+}
